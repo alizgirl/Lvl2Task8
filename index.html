@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALT Soul</title>
+<!--bootstrap css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="stylesheets.css" rel="stylesheet">
+<!--flavicon link-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/Favicon/site.webmanifest">
+<!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--hero image and navigation bar-->
+    <header>
+        <img id="heroImage" src="images/Banner.png" alt="Banner image. Text only. Text states A Lil Tipsy Soul.">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vodka.html">Vodka</a></li>
+                <li><a href="rum.html">Rum</a></li>
+                <li><a href="whiskey.html">Whiskey</a></li>
+                <li><a href="saveForLater.html">Saved</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--table-->
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Drink Responsibly</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Drinking is for persons 18 years and older.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         Do not drink and drive.
+                    </td>   
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+<!--testimonial/quote-->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <q>ALT Soul has introduced me to so many new brands of alcohol!</q>
+    </section>
+    
+    <!-- contact forms-->
+    <section class="row vodkaAbout">
+        <div class="col-md-6 newsletterContent">
+        <form>
+            <label>Comment</label>
+            <br>
+            <input type="text" id="inputComments" class="form-control">
+            <br>
+            <label>Name</label>
+            <br>
+            <input type="text" id="inputName" class="form-control">
+            <br>
+            <button type="submit" onclick="inputSubmit(event)" id="inputSubmitBtn">Submit</button>
+        </form>
+    </div>
+    </section>
+    <section class="row vodkaAbout" id="commentDisplay">
+        <div class="col-md-6 newsletterContent" id="displayInput">
+            
+        </div>
+    </section>
+
+<!--footer-->    
+    <footer>
+        <div class="row footerheadings">
+            <div class="col-md-6">
+                <h2>Newsletter</h2>
+            </div>
+            <div class="col-md-6">
+                <h2>Get in Touch!</h2>
+            </div>
+        </div>
+
+<!--newsletter form subscription-->
+        <div class="row footerContent">
+            <div class="col-md-6 newsletterContent">
+                <form>
+                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="number" class="form-control" placeholder="Cell number">
+
+                    <button type="submit">Submit</button>
+                    <br>
+                </form>
+<!--radio form to allow users to select how they'd like to be contacted-->
+                <form>
+                    <h3>Please select how you'd like to recieve news from us!</h3>
+                    <input type="radio" id="contactChoice1" name="contact" value="email">
+                    <label for="contactChoice1">Email</label>
+                    <input type="radio" id="contactChoice2" name="contact" value="phone">
+                    <label for="contactChoice2">SMS</label>
+                    
+                    <button type="submit">Select</button>
+                </form>
+            </div>
+<!--social links that link out to the companies social media sites, allowing the user to contact the company-->
+            <div class="col-md-6 getInTouchContent">
+                <img src="images/Icons/Facebook.png" alt="clickable facebook logo">  
+                <h3><a href ="https://www.facebook.com">Facebook</a></h3>
+                <br>    
+                <img src="images/Icons/Instagram.png" alt="clickable instagram logo">
+                <h3><a href = "https://www.instagram.com" >Instagram</a></h3>
+                <br>
+                <img src="images/Icons/Twitter.png" alt="clickable twitter logo">
+                <h3><a href="https://www.twitter.com">Twitter</a></h3>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
