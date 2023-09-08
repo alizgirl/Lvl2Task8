@@ -28,7 +28,7 @@ if (!sessionStorage.getItem('rumArr')){
     sessionStorage.setItem('rumArr', JSON.stringify(whiskyArr))}
 
 //function to save elements on the web page
-const saveIt = (clicked_id) =>{
+const addIt = (clicked_id) =>{
 //check to see if the id of the button clicked matches
     if (clicked_id == 'vodkaAboutBtn'){
 //push the element associated with the button into the array for that specific web page
