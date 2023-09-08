@@ -33,6 +33,7 @@ header a{
 }
 header a:hover{
     font-weight: bold;
+    color: pink;
 }
 
 header a:visited{
